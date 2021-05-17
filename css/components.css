@@ -1,0 +1,106 @@
+.wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.card {
+    padding: 3.25rem;
+}
+
+.card:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--bright-orange);
+}
+
+.card:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+    background-color: var(--very-dark-cyan);
+}
+
+.card-header {
+    margin: 1rem auto;
+}
+
+.header-title {
+    color: var(--light-gray);
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem auto;
+    letter-spacing: .1rem;
+}
+
+.card-body {
+    color: var(--transparent-white);
+    font-family: "Big Shoulders Display";
+    font-weight: 400;
+    margin: 1rem auto;
+    line-height: 2rem;
+}
+
+.card-footer {
+    margin: 1rem auto;
+}
+
+.mentor-btn {
+    margin-top: 1rem;
+    border: 2px solid transparent;
+    border-radius: 300px;
+    mix-blend-mode: screen;
+    color: #000;
+    font-size: 1rem;
+    padding: 1rem 1.75rem;
+}
+
+.mentor-btn:hover {
+    cursor: pointer;
+}
+
+.mentor-btn:active {
+    background-color: var(--light-gray);
+    border-color: var(--light-gray);
+    color: var(--light-gray);
+    background-color: transparent;
+}
+
+.attribution {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px){
+    .wrapper {
+        width: 65%;
+        margin: auto;
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+        flex-flow: row;
+    }
+    
+    .card {
+        padding: 3.25rem;
+    }
+    
+    .card:nth-child(1) {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .card:nth-child(3) {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .mentor-btn {
+        margin-top: 5rem;
+        padding: .75rem 2rem;
+    }
+}
